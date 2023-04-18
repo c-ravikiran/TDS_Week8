@@ -23,8 +23,8 @@ third = st.number_input("Third number", value = 0)
 #Button
 Max = st.radio(
     "Max value of numbers",
-    ('Max_num'))
+    ('M'))
 
-if Max == 'Max_num':
+if Max == 'M':
     largest_num = max_value(first, second, third)
     st.write(f"The largest number is {largest_num}")
