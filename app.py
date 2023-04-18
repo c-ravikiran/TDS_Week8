@@ -21,6 +21,10 @@ second = st.number_input("Second number", value = 0)
 third = st.number_input("Third number", value = 0)
 
 #Button
-if st.radio("Max number"):
-  Max = max_value(first, second, third)
-  st.success(f"Max val is {Max}")
+Max = st.radio(
+    "Max value of numbers",
+    ('Max_num'))
+
+if Max == 'Max_num':
+    largest_num = max_value(first, second, third)
+    st.write(f"The largest number is {largest_num}")
