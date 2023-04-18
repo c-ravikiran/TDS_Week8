@@ -21,10 +21,6 @@ second = st.number_input("Second number", value = 0)
 third = st.number_input("Third number", value = 0)
 
 #Button
-Max = st.radio(
-    "Max value of numbers",
-    ('M'))
-
-if Max == 'M':
+Max = st.button("Max value of numbers"):
     largest_num = max_value(first, second, third)
     st.write(f"The largest number is {largest_num}")
